@@ -8,20 +8,8 @@ function App() {
       text: "Right On!",
     },
     {
-      title: "success",
-      text: "Right On!",
-    },
-    {
       title: "warning",
       text: "Hmmm",
-    },
-    {
-      title: "warning",
-      text: "Hmmm",
-    },
-    {
-      title: "error",
-      text: "Uh Oh",
     },
     {
       title: "error",
@@ -32,7 +20,7 @@ function App() {
   return (
     <div className="wrapper">
       {messageArray.map((message) => (
-        <Toast title={message.title} text={message.text} />
+        <Toast message={message} />
       ))}
     </div>
   );

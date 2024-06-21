@@ -1,12 +1,12 @@
 import React from "react";
 import "./Toast.css";
 
-const Toast = (props) => {
+const Toast = ({ message }) => {
   return (
-    <div className={`toast toast-${props.title}`}>
+    <div className={`toast toast-${message.title}`}>
       <main className="toast__message">
-        <p className="toast__message-title">{props.title}</p>
-        <p className="toast__message-text">{props.text}</p>
+        <p className="toast__message-title">{message.title}</p>
+        <p className="toast__message-text">{message.text}</p>
       </main>
       <button className="toast__button">Dismiss</button>
     </div>
